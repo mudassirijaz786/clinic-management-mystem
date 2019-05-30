@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="468.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.forms.Modify.ModifyMedicinesController">
+    <stylesheets>
+        <URL value="@addmedicines.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="Id" focusColor="GREEN" labelFloat="true" layoutX="100.0" layoutY="84.0" prefHeight="36.0" prefWidth="288.0" promptText="Medicine ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="name" focusColor="GREEN" labelFloat="true" layoutX="100.0" layoutY="140.0" prefHeight="36.0" prefWidth="288.0" promptText="Name" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="Description" focusColor="GREEN" labelFloat="true" layoutX="100.0" layoutY="196.0" prefHeight="36.0" prefWidth="288.0" promptText="Description" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton fx:id="modifyMedicines" layoutX="100.0" layoutY="318.0" onAction="#modifyMedicinesActionPerformed" prefHeight="49.0" prefWidth="126.0" style="-fx-background-color: #2f3640;" text="Modify Medicine" textFill="#99ff66" />
+      <JFXTextField fx:id="quantityInStock" focusColor="GREEN" labelFloat="true" layoutX="100.0" layoutY="252.0" prefHeight="36.0" prefWidth="288.0" promptText="Quantity In Stock" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton layoutX="251.0" layoutY="318.0" onAction="#cancelActionPerformed" prefHeight="49.0" prefWidth="137.0" style="-fx-background-color: #2f3640;" text="Cancel" textFill="#99ff66" />
+   </children>
+</AnchorPane>

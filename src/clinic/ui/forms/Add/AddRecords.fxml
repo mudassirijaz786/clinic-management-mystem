@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="501.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.forms.Add.AddRecordsController">
+    <stylesheets>
+        <URL value="@addrecords.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="ID" focusColor="GREEN" labelFloat="true" layoutX="117.0" layoutY="79.0" prefHeight="36.0" prefWidth="288.0" promptText="Record ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="appointmentNo" focusColor="GREEN" labelFloat="true" layoutX="117.0" layoutY="140.0" prefHeight="36.0" prefWidth="288.0" promptText="Appointment Number" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="patientID" focusColor="GREEN" labelFloat="true" layoutX="117.0" layoutY="327.0" prefHeight="36.0" prefWidth="288.0" promptText="Patient ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="roomNo" focusColor="GREEN" labelFloat="true" layoutX="117.0" layoutY="269.0" prefHeight="36.0" prefWidth="288.0" promptText="Room" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton fx:id="addRecords" layoutX="117.0" layoutY="389.0" onAction="#addRecordsActionPerformed" prefHeight="49.0" prefWidth="124.0" style="-fx-background-color: #2f3640;" text="Add Record" textFill="#99ff66" />
+      <DatePicker fx:id="appointmentDate" layoutX="117.0" layoutY="206.0" prefHeight="36.0" prefWidth="288.0" promptText="Date" />
+      <JFXButton layoutX="275.0" layoutY="390.0" onAction="#cancelActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="cancel" textFill="#99ff66" />
+   </children>
+</AnchorPane>

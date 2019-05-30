@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="466.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.forms.Modify.ModifyRecordsController">
+    <stylesheets>
+        <URL value="@addrecords.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="appointment_Num" focusColor="GREEN" labelFloat="true" layoutX="89.0" layoutY="129.0" prefHeight="36.0" prefWidth="288.0" promptText="Appointment Number" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="patient_id" focusColor="GREEN" labelFloat="true" layoutX="89.0" layoutY="308.0" prefHeight="36.0" prefWidth="288.0" promptText="Patient ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="room_no" focusColor="GREEN" labelFloat="true" layoutX="89.0" layoutY="247.0" prefHeight="36.0" prefWidth="288.0" promptText="Room" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton fx:id="modifyRecords" layoutX="89.0" layoutY="364.0" onAction="#modifyRecordsActionPerformed" prefHeight="49.0" prefWidth="118.0" style="-fx-background-color: #2f3640;" text="Modify Record" textFill="#99ff66" />
+      <JFXTextField fx:id="ID" focusColor="GREEN" labelFloat="true" layoutX="89.0" layoutY="70.0" prefHeight="36.0" prefWidth="288.0" promptText="Record ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <DatePicker fx:id="appointment_date" layoutX="89.0" layoutY="189.0" prefHeight="36.0" prefWidth="288.0" promptText="Date" style="-fx-background-color: default; -fx-border-color: green; -fx-border-radius: 3px;" />
+      <JFXButton layoutX="251.0" layoutY="364.0" onAction="#cancelActionPerformed" prefHeight="49.0" prefWidth="126.0" style="-fx-background-color: #2f3640;" text="Cancel" textFill="#99ff66" />
+   </children>
+</AnchorPane>

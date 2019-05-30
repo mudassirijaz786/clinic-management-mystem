@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="686.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.forms.Add.AddEmployeeController">
+    <stylesheets>
+        <URL value="@addemployee.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="age" focusColor="GREEN" labelFloat="true" layoutX="344.0" layoutY="261.0" prefHeight="36.0" prefWidth="288.0" promptText="Age" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="address" focusColor="GREEN" labelFloat="true" layoutX="39.0" layoutY="261.0" prefHeight="36.0" prefWidth="288.0" promptText="Address" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="contactNo" focusColor="GREEN" labelFloat="true" layoutX="344.0" layoutY="140.0" prefHeight="36.0" prefWidth="288.0" promptText="Contact Number" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="name" focusColor="GREEN" labelFloat="true" layoutX="39.0" layoutY="140.0" prefHeight="36.0" prefWidth="288.0" promptText="Employee Name" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="type" labelFloat="true" layoutX="344.0" layoutY="376.0" prefHeight="36.0" prefWidth="288.0" promptText="Type" />
+      <JFXTextField fx:id="salary" focusColor="GREEN" labelFloat="true" layoutX="39.0" layoutY="319.0" prefHeight="36.0" prefWidth="288.0" promptText="Salary" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton fx:id="addEmployee" layoutX="183.0" layoutY="447.0" onAction="#addEmployeeActionPerformed" prefHeight="49.0" prefWidth="138.0" style="-fx-background-color: #2f3640;" text="Add Employee" textFill="#99ff66" />
+      <JFXTextField fx:id="ID" focusColor="GREEN" labelFloat="true" layoutX="200.0" layoutY="79.0" prefHeight="36.0" prefWidth="288.0" promptText="Employee ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXRadioButton fx:id="male" layoutX="39.0" layoutY="397.0" text="Male" />
+      <JFXRadioButton fx:id="female" layoutX="161.0" layoutY="397.0" text="Female" />
+      <JFXTextField fx:id="username" focusColor="GREEN" labelFloat="true" layoutX="39.0" layoutY="198.0" prefHeight="36.0" prefWidth="288.0" promptText="Username" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="password" focusColor="GREEN" labelFloat="true" layoutX="344.0" layoutY="198.0" prefHeight="36.0" prefWidth="288.0" promptText="Password" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="CID" focusColor="GREEN" labelFloat="true" layoutX="344.0" layoutY="319.0" prefHeight="36.0" prefWidth="288.0" promptText="Clinic ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton layoutX="344.0" layoutY="447.0" onAction="#cancelActionPerformed" prefHeight="49.0" prefWidth="152.0" style="-fx-background-color: #2f3640;" text="Cancel" textFill="#99ff66" />
+   </children>
+</AnchorPane>

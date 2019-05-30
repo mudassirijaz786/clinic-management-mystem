@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="285.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.forms.Modify.ModifyDonorController">
+   <children>
+      <JFXTextField fx:id="ID" focusColor="GREEN" labelFloat="true" layoutX="85.0" layoutY="82.0" prefHeight="36.0" prefWidth="288.0" promptText="Donor ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="name" focusColor="GREEN" labelFloat="true" layoutX="85.0" layoutY="142.0" prefHeight="36.0" prefWidth="288.0" promptText="Donor Name" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton fx:id="modifyDonor" layoutX="85.0" layoutY="210.0" onAction="#modifyDonorActionPerformed" prefHeight="43.0" prefWidth="131.0" style="-fx-background-color: #2f3640;" text="Modify Donor" textFill="#99ff66" />
+      <JFXButton layoutX="242.0" layoutY="210.0" onAction="#cancelActionPerformed" prefHeight="43.0" prefWidth="131.0" style="-fx-background-color: #2f3640;" text="cancel" textFill="#99ff66" />
+   </children>
+</AnchorPane>

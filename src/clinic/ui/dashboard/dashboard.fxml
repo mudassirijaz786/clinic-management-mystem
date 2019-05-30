@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="986.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.dashboard.DashboardController">
+    <stylesheets>
+        <URL value="@dashboard.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="dashboardContent" layoutX="274.0" prefHeight="600.0" prefWidth="713.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fx:id="loginByLabel" fill="#00000061" layoutX="544.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="114.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#131413" layoutX="459.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loggedin as" wrappingWidth="73.0" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="-1.0" prefHeight="600.0" prefWidth="275.0" style="-fx-background-color: #2f3640;">
+         <children>
+            <JFXButton fx:id="patient" layoutX="-1.0" layoutY="173.0" onAction="#patientActionPerformed" prefHeight="49.0" prefWidth="277.0" style="-fx-background-color: #2f3640; -fx-border-color: green;" text="Patient" textFill="#99ff66" />
+            <JFXButton fx:id="employee" layoutY="114.0" onAction="#employeeActionPerformed" prefHeight="49.0" prefWidth="275.0" style="-fx-background-color: #2f3640; -fx-border-color: green;" text="Employee" textFill="#99ff66" />
+            <JFXButton fx:id="accounts" layoutY="347.0" onAction="#accountsActionPerformed" prefHeight="49.0" prefWidth="277.0" style="-fx-background-color: #2f3640; -fx-border-color: green;" text="Accounts" textFill="#99ff66" />
+            <JFXButton fx:id="records" layoutX="-1.0" layoutY="288.0" onAction="#recordsActionPerformed" prefHeight="49.0" prefWidth="277.0" style="-fx-background-color: #2f3640; -fx-border-color: green;" text="Records" textFill="#99ff66" />
+            <JFXButton fx:id="medicines" layoutY="229.0" onAction="#medicinesActionPerformed" prefHeight="49.0" prefWidth="277.0" style="-fx-background-color: #2f3640; -fx-border-color: green;" text="Medicines" textFill="#99ff66" />
+            <JFXButton fx:id="fund" layoutY="406.0" onAction="#fundActionPerformed" prefHeight="49.0" prefWidth="277.0" style="-fx-background-color: #2f3640; -fx-border-color: green;" text="Donations" textFill="#99ff66" />
+            <JFXButton fx:id="donor" layoutX="-1.0" layoutY="468.0" onAction="#donorActionPerformed" prefHeight="49.0" prefWidth="277.0" style="-fx-background-color: #2f3640; -fx-border-color: green;" text="Donor" textFill="#99ff66" />
+            <JFXButton layoutY="537.0" onAction="#logoutActionPerformed" prefHeight="49.0" prefWidth="275.0" style="-fx-background-color: #2f3640;" text="Donor" textFill="#2f3640" />
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="14.0" layoutY="543.0">
+               <image>
+                  <Image url="@icons8_Shutdown_104px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="14.0" layoutY="120.0">
+               <image>
+                  <Image url="@Management_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="14.0" layoutY="179.0">
+               <image>
+                  <Image url="@Wheelchair_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="14.0" layoutY="235.0">
+               <image>
+                  <Image url="@Pill_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="14.0" layoutY="294.0">
+               <image>
+                  <Image url="@Edit%20Property_104px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="14.0" layoutY="353.0">
+               <image>
+                  <Image url="@Ledger_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="14.0" layoutY="412.0">
+               <image>
+                  <Image url="@Charity_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="14.0" layoutY="474.0">
+               <image>
+                  <Image url="@Man_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="89.0" layoutX="98.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Handshake%20Heart_100px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="412.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.forms.Modify.ModifyFundController">
+   <children>
+      <JFXButton fx:id="modifyFund" layoutX="100.0" layoutY="328.0" onAction="#modifyFundActionPerformed" prefHeight="49.0" prefWidth="125.0" style="-fx-background-color: #2f3640;" text="Modify Fund" textFill="#99ff66" />
+      <JFXTextField fx:id="DID" focusColor="GREEN" layoutX="100.0" layoutY="265.0" prefHeight="36.0" prefWidth="288.0" promptText="Donor ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="amount" focusColor="GREEN" labelFloat="true" layoutX="100.0" layoutY="202.0" prefHeight="36.0" prefWidth="288.0" promptText="Amount" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="ID" focusColor="GREEN" labelFloat="true" layoutX="100.0" layoutY="84.0" prefHeight="36.0" prefWidth="288.0" promptText="Fund ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <DatePicker fx:id="date" layoutX="100.0" layoutY="142.0" prefHeight="36.0" prefWidth="288.0" promptText="Date" />
+      <JFXButton layoutX="248.0" layoutY="328.0" onAction="#cancelActionPerformed" prefHeight="49.0" prefWidth="140.0" style="-fx-background-color: #2f3640;" text="Cancel" textFill="#99ff66" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.View.ViewPatientMedicineDetailController">
+   <children>
+      <TableView fx:id="allPatientMedicineTable" layoutX="50.0" layoutY="107.0" prefHeight="200.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="patientMedicinePIDCol" prefWidth="75.0" text="Patient ID" />
+          <TableColumn fx:id="patientMedicinePNameCol" prefWidth="115.0" text="Patient Name" />
+            <TableColumn fx:id="patientMedicineMIDCol" prefWidth="91.0" text="Medicine ID" />
+            <TableColumn fx:id="patientMedicineMNameCol" prefWidth="107.0" text="Medicine Name" />
+            <TableColumn fx:id="patientMedicineQuantityCol" prefWidth="77.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="okPatientMedicine" layoutX="212.0" layoutY="322.0" onAction="#okPatientMedicineActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="OK" textFill="#99ff66" />
+   </children>
+</AnchorPane>

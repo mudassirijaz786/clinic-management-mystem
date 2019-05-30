@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="632.0" style="-fx-border-color: green; -fx-border-radius: 3px;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.forms.Add.AddPatientController">
+    <stylesheets>
+        <URL value="@addpatient.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="name" focusColor="GREEN" labelFloat="true" layoutX="66.0" layoutY="144.0" prefHeight="36.0" prefWidth="288.0" promptText="Name" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="contactNo" focusColor="GREEN" labelFloat="true" layoutX="66.0" layoutY="207.0" prefHeight="36.0" prefWidth="288.0" promptText="Contact Number" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="address" focusColor="GREEN" labelFloat="true" layoutX="66.0" layoutY="350.0" prefHeight="36.0" prefWidth="288.0" promptText="Address" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="age" focusColor="GREEN" labelFloat="true" layoutX="66.0" layoutY="300.0" prefHeight="36.0" prefWidth="288.0" promptText="Age" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton fx:id="addPatient" layoutX="61.0" layoutY="476.0" onAction="#addPatientActionPerfomed" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: #2f3640;" text="Add patient" textFill="#99ff66" />
+      <JFXRadioButton fx:id="female" layoutX="201.0" layoutY="266.0" text="Female" />
+      <JFXRadioButton fx:id="male" layoutX="66.0" layoutY="266.0" text="Male" />
+      <JFXTextField fx:id="ID" focusColor="GREEN" labelFloat="true" layoutX="66.0" layoutY="86.0" prefHeight="36.0" prefWidth="288.0" promptText="Patient ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="MID" layoutX="66.0" layoutY="406.0" onKeyPressed="#addMedicineToListKeyAction" prefHeight="36.0" prefWidth="288.0" promptText="Add Medicine" />
+      <JFXListView fx:id="listOfMedicines" layoutX="380.0" layoutY="144.0" prefHeight="242.0" prefWidth="218.0" style="-fx-border-color: green; -fx-border-radius: 3px;" />
+      <Text fill="GREEN" layoutX="432.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected medicines" />
+      <JFXButton layoutX="219.0" layoutY="476.0" onAction="#cancelActionPerformed" prefHeight="44.0" prefWidth="135.0" style="-fx-background-color: #2f3640;" text="Cancel" textFill="#99ff66" />
+   </children>
+</AnchorPane>

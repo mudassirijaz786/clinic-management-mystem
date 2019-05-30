@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="588.0" style="-fx-background-color:  #2f3640;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.login.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      
+      <Label layoutX="278.0" layoutY="106.0" text="AKF" textFill="#068235">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <ImageView fitHeight="80.0" fitWidth="89.0" layoutX="250.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Handshake%20Heart_100px.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="107.0" layoutY="221.0" prefHeight="380.0" prefWidth="372.0" style="-fx-background-color: white; -fx-border-color: #068235;">
+         <children>
+            <JFXTextField fx:id="username" focusColor="#5b5e64" labelFloat="true" layoutX="50.0" layoutY="67.0" prefHeight="36.0" prefWidth="278.0" promptText="Username" style="-fx-border-color: black; -fx-border-color: #068235;" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#5b5e64" labelFloat="true" layoutX="50.0" layoutY="122.0" prefHeight="36.0" prefWidth="278.0" promptText="Password" style="-fx-border-color: black; -fx-border-color: #068235;" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXComboBox fx:id="type" focusColor="#5b5e64" labelFloat="true" layoutX="50.0" layoutY="192.0" onKeyPressed="#enterKeyPressedLogin" prefHeight="36.0" prefWidth="278.0" promptText="Select Role" style="-fx-border-color: black; -fx-border-color: #068235;" unFocusColor="WHITE" />
+            <JFXButton layoutX="44.0" layoutY="282.0" onAction="#loginActionPerfomed" onKeyPressed="#enterKeyPressedLogin" prefHeight="49.0" prefWidth="284.0" style="-fx-background-color: #2f3640; -fx-border-color: Green;" text="Submit" textFill="#99ff66" />
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="292.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8_User_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="292.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8_Password_50px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="157.0" layoutY="21.0" text="Login" textFill="#068235">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <Text fx:id="errorMsg" fill="#e40c0c" layoutX="44.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="284.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="55.0" fitWidth="62.0" layoutX="261.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8_Male_User_50px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="227.0" layoutY="123.0" text="Joining Hands Together" textFill="#068235">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="patientContent" prefHeight="600.0" prefWidth="713.0" style="-fx-background-color: default;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.screens.PatientController">
+    <stylesheets>
+        <URL value="@patient.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="allPatientsTable" layoutX="59.0" layoutY="186.0" prefHeight="294.0" prefWidth="599.0">
+        <columns>
+          <TableColumn fx:id="patientIDCol" prefWidth="47.0" text="ID" />
+          <TableColumn fx:id="patientNameCol" prefWidth="110.0" text="Name" />
+            <TableColumn fx:id="patientGenderCol" prefWidth="78.0" text="Gender" />
+            <TableColumn fx:id="patientAgeCol" prefWidth="87.0" text="Age" />
+            <TableColumn fx:id="patientAddressCol" prefWidth="181.0" text="address" />
+            <TableColumn fx:id="patientContactNoCol" minWidth="0.0" prefWidth="95.0" text="contactno" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="search" focusColor="GREEN" labelFloat="true" layoutX="452.0" layoutY="141.0" onKeyReleased="#searchActionPerformed" prefHeight="26.0" prefWidth="206.0" promptText="Search..." />
+      <JFXButton fx:id="addPatient" layoutX="59.0" layoutY="499.0" onAction="#addPatientActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Add New" textFill="#99ff66" />
+      <JFXButton fx:id="modifyPatient" layoutX="217.0" layoutY="499.0" onAction="#modifyPatientActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Modify" textFill="#99ff66" />
+      <JFXButton fx:id="removePatient" layoutX="370.0" layoutY="499.0" onAction="#removePatientActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Remove" textFill="#99ff66" />
+      <JFXButton fx:id="viewMedicineDetail" layoutX="524.0" layoutY="499.0" onAction="#viewMedicineDetailActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="View medicine detail" textFill="#99ff66" />
+      <Text fill="GREEN" layoutX="280.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

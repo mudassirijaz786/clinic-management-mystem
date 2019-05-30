@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="468.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.forms.Modify.ModifyAccountsController">
+    <stylesheets>
+        <URL value="@addaccounts.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="monthly_balance" focusColor="GREEN" labelFloat="true" layoutX="95.0" layoutY="201.0" prefHeight="36.0" prefWidth="288.0" promptText="Monthly Balance" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="utility_exp" focusColor="GREEN" labelFloat="true" layoutX="95.0" layoutY="140.0" prefHeight="36.0" prefWidth="288.0" promptText="Utility Expense" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton fx:id="modifyAccounts" layoutX="96.0" layoutY="317.0" onAction="#modifyAccountsActionPerformed" prefHeight="43.0" prefWidth="122.0" style="-fx-background-color: #2f3640;" text="Modify Account" textFill="#99ff66" />
+      <JFXTextField fx:id="FID" focusColor="GREEN" labelFloat="true" layoutX="95.0" layoutY="256.0" prefHeight="36.0" prefWidth="288.0" promptText="Fund ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="ID" focusColor="GREEN" labelFloat="true" layoutX="95.0" layoutY="80.0" prefHeight="36.0" prefWidth="288.0" promptText="Account ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton layoutX="261.0" layoutY="317.0" onAction="#cancelActionPerformed" prefHeight="43.0" prefWidth="122.0" style="-fx-background-color: #2f3640;" text="cancel" textFill="#99ff66" />
+   </children>
+</AnchorPane>

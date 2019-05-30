@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: default;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.screens.RecordsController">
+   <children>
+      <JFXTextField fx:id="search" focusColor="GREEN" labelFloat="true" layoutX="448.0" layoutY="126.0" onKeyReleased="#searchActionPerformed" onKeyTyped="#validate" prefHeight="31.0" prefWidth="193.0" promptText="search" />
+      <TableView fx:id="allRecordsTable" layoutX="46.0" layoutY="178.0" prefHeight="294.0" prefWidth="595.0">
+        <columns>
+          <TableColumn fx:id="recordIDCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="recordAppointmentIDCol" prefWidth="141.0" text="Appointment Number" />
+            <TableColumn fx:id="recordAppointmentDateCol" prefWidth="160.0" text="Appointment Date" />
+            <TableColumn fx:id="recordRoomCol" prefWidth="77.0" text="Room" />
+            <TableColumn fx:id="recordPatientIDCol" prefWidth="141.0" text="Patient ID" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="addRecords" layoutX="46.0" layoutY="492.0" onAction="#addRecordsActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Add New" textFill="#99ff66" />
+      <JFXButton fx:id="modifyRecords" layoutX="205.0" layoutY="492.0" onAction="#modifyRecordsActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Modify" textFill="#99ff66" />
+      <JFXButton fx:id="removeRecords" layoutX="362.0" layoutY="492.0" onAction="#removeRecordsActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Remove" textFill="#99ff66" />
+      <Text fill="GREEN" layoutX="268.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Records">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

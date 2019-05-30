@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.screens.MedicineController">
+   <children>
+      <JFXButton fx:id="removeMedicine" layoutX="389.0" layoutY="502.0" onAction="#removeMedicinesActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Remove" textFill="#99ff66" />
+      <JFXButton fx:id="modifyMedicine" layoutX="224.0" layoutY="502.0" onAction="#modifyMedicinesActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Modify" textFill="#99ff66" />
+      <JFXButton fx:id="addMedicines" layoutX="56.0" layoutY="502.0" onAction="#addMedicinesActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Add New" textFill="#99ff66" />
+      <TableView fx:id="allMedicineTable" layoutX="56.0" layoutY="188.0" prefHeight="294.0" prefWidth="595.0">
+         <columns>
+            <TableColumn fx:id="medicineIDCol" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="medicineNameCol" prefWidth="109.0" text="Medicine Name" />
+            <TableColumn fx:id="medicineDescCol" prefWidth="182.0" text="Desc" />
+            <TableColumn fx:id="medicineQuantityInStockCol" prefWidth="228.0" text="Quantity In Stock" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="search" focusColor="GREEN" labelFloat="true" layoutX="420.0" layoutY="136.0" onAction="#searchActionPerformedByName" onKeyReleased="#searchActionPerformedByName" prefHeight="31.0" prefWidth="231.0" promptText="Search..." />
+      <Text fill="GREEN" layoutX="168.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medicines">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

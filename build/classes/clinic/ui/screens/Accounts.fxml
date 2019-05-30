@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="599.0" prefWidth="713.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.screens.AccountsController">
+    <stylesheets>
+        <URL value="@accounts.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="search" labelFloat="true" layoutX="430.0" layoutY="126.0" onKeyReleased="#searchActionPerformed" onKeyTyped="#validate" prefHeight="25.0" prefWidth="218.0" promptText="Search..." />
+      <TableView fx:id="allAccountsTable" layoutX="128.0" layoutY="174.0" prefHeight="294.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="accountIDCol" prefWidth="81.0" text="Accounts ID" />
+          <TableColumn fx:id="accountMonthlyBalanceCol" prefWidth="180.0" text="Monthly Balance" />
+            <TableColumn fx:id="accountUtilityExpenseCol" prefWidth="140.0" text="Utility Expense" />
+            <TableColumn fx:id="accountFIDCol" prefWidth="118.0" text="Donor ID" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="addAccounts" layoutX="133.0" layoutY="490.0" onAction="#addAccountsActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640; -fx-border-color: green;" text="Add" textFill="#99ff66" />
+      <JFXButton fx:id="modifyAccounts" layoutX="323.0" layoutY="490.0" onAction="#modifyAccountsActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640; -fx-border-color: green;" text="Modify" textFill="#99ff66" />
+      <JFXButton fx:id="removeAccounts" layoutX="518.0" layoutY="490.0" onAction="#removeAccountsActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640; -fx-border-color: green;" text="Remove" textFill="#99ff66" />
+      <Text fill="GREEN" layoutX="211.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

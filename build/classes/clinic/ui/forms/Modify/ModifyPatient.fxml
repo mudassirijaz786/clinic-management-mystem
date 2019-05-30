@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="443.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.forms.Modify.ModifyPatientController">
+    <stylesheets>
+        <URL value="@addpatient.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="name" focusColor="GREEN" labelFloat="true" layoutX="78.0" layoutY="142.0" prefHeight="36.0" prefWidth="288.0" promptText="Name" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="contactNo" focusColor="GREEN" labelFloat="true" layoutX="78.0" layoutY="201.0" prefHeight="36.0" prefWidth="288.0" promptText="Contact Number" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="address" focusColor="GREEN" labelFloat="true" layoutX="77.0" layoutY="364.0" prefHeight="36.0" prefWidth="288.0" promptText="Address" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="age" focusColor="GREEN" labelFloat="true" layoutX="78.0" layoutY="300.0" prefHeight="36.0" prefWidth="288.0" promptText="Age" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+      <JFXButton fx:id="modifyPatient" layoutX="78.0" layoutY="430.0" onAction="#modifyPatientActionPerfomed" prefHeight="49.0" prefWidth="122.0" style="-fx-background-color: #2f3640;" text="Modify Patient" textFill="#99ff66" />
+      <JFXRadioButton fx:id="male" layoutX="79.0" layoutY="266.0" text="Male" />
+      <JFXRadioButton fx:id="female" layoutX="237.0" layoutY="266.0" text="Female" />
+      <JFXButton layoutX="229.0" layoutY="430.0" onAction="#cancelActionPerformed" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #2f3640;" text="Cancel" textFill="#99ff66" />
+      <JFXTextField fx:id="ID" focusColor="GREEN" labelFloat="true" layoutX="78.0" layoutY="77.0" prefHeight="36.0" prefWidth="288.0" promptText="Patient ID" style="-fx-border-color: green; -fx-border-radius: 3px;" unFocusColor="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.screens.DonorController">
+   <children>
+      <JFXButton fx:id="removeDonor" layoutX="397.0" layoutY="522.0" onAction="#removeDonorActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Remove" textFill="#85ff7a" />
+      <JFXButton fx:id="modifyDonor" layoutX="241.0" layoutY="522.0" onAction="#modifyDonorActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Modify" textFill="#85ff7a" />
+      <JFXButton fx:id="addDonor" layoutX="82.0" layoutY="522.0" onAction="#addDonorActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Add New" textFill="#85ff7a" />
+      <TableView fx:id="allDonorTable" layoutX="130.0" layoutY="192.0" prefHeight="294.0" prefWidth="364.0">
+         <columns>
+            <TableColumn fx:id="donorIDCol" prefWidth="123.0" text="Donor ID" />
+            <TableColumn fx:id="donorNameCol" prefWidth="240.0" text="Name" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="search" focusColor="GREEN" labelFloat="true" layoutX="301.0" layoutY="143.0" onKeyReleased="#searchActionPerformed" prefHeight="31.0" prefWidth="193.0" promptText="Search..." />
+      <Text fill="GREEN" layoutX="201.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donor">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

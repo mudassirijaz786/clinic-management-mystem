@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ui.screens.FundController">
+   <children>
+      <JFXTextField fx:id="search" labelFloat="true" layoutX="468.0" layoutY="146.0" onKeyReleased="#searchActionPerformed" onKeyTyped="#validate" prefHeight="31.0" prefWidth="193.0" promptText="search" />
+      <TableView fx:id="allFundTable" layoutX="66.0" layoutY="198.0" prefHeight="294.0" prefWidth="595.0">
+         <columns>
+            <TableColumn fx:id="fundIDCol" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="fundAmountCol" prefWidth="123.0" text="Amount" />
+            <TableColumn fx:id="fundDateCol" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="fundDIDCol" prefWidth="75.0" text="DID" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="addFun" layoutX="66.0" layoutY="512.0" onAction="#addFundActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Add New" textFill="#99ff66" />
+      <JFXButton fx:id="modifyFund" layoutX="225.0" layoutY="512.0" onAction="#modifyFundActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Modify" textFill="#99ff66" />
+      <JFXButton fx:id="removeFund" layoutX="376.0" layoutY="512.0" onAction="#removeFundActionPerformed" prefHeight="49.0" prefWidth="130.0" style="-fx-background-color: #2f3640;" text="Remove" textFill="#99ff66" />
+      <Text fill="GREEN" layoutX="278.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donations">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
